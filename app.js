@@ -84,7 +84,7 @@ $(document).ready(function () {
   });
 });
 
-open2 = function () {
+open3= function () {
   var context = cast.framework.CastContext.getInstance();
 
   context.setOptions({
