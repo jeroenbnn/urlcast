@@ -37,13 +37,13 @@
                     <center>
                         <img src="vendor/flat-ui/img/christmastree1.png" class="television">
                         <br><br>
-                        <input type="hidden" value="https://kersttv.be/tv1.html" placeholder="URL" class="form-control" id="url">
+                        <input type="hidden" value="tv1.html" placeholder="URL" class="form-control" id="url">
                         <button class="btn-kerst btn-primary btn-lg" id="open"><span class="fab fa-chromecast"></span> Cast KerstTV  1</button> <br>
-                        <a href="https://Www.kersttv.be/tv1.html" target="_blank">Bekijk in je browser</a>
+                        <a href="tv1.html" target="_blank">Bekijk in je browser</a>
                         <br><br>
-                        <input type="hidden" value="https://kersttv.be/tv2.html" placeholder="URL" class="form-control" id="url2">
+                        <input type="hidden" value="tv2.html" placeholder="URL" class="form-control" id="url2">
                         <button class="btn-kerst btn-primary btn-lg" id="open2"><span class="fab fa-chromecast"></span> Cast KerstTV  2</button> <br>
-                        <a href="https://Www.kersttv.be/tv2.html" target="_blank">Bekijk in je browser</a>
+                        <a href="tv2.html" target="_blank">Bekijk in je browser</a>
                         <br><br>
                         <button class="btn-kerst btn-primary btn-lg" id="cast"><span class="fab fa-chromecast"></span> Cast Kerstradio</button> <br>
                     </center>
@@ -70,7 +70,7 @@
           // Check if casting is available
           if (cjs.available) {
               // Initiate new cast session
-              cjs.cast('"https://ruby.torontocast.com:1150/stream');
+              cjs.cast('"http://ruby.torontocast.com:1150/kerstradio');
           }
       });
       </script>  
