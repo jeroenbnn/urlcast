@@ -37,8 +37,7 @@
                         <button class="btn-kerst btn-primary btn-lg" id="open2"><span class="fab fa-chromecast"></span> Cast KerstTV  2</button> <br>
                         <a href="https://Www.kersttv.be/tv2.html" target="_blank">Bekijk in je browser</a>
                         <br><br>
-                        <input type="hidden" value="http://ruby.torontocast.com:1150" placeholder="URL" class="form-control" id="url3">
-                        <button class="btn-kerst btn-primary btn-lg" id="open"><span class="fab fa-chromecast"></span> Cast Kerstradio</button> <br>
+                        <button class="btn-kerst btn-primary btn-lg" id="cast"><span class="fab fa-chromecast"></span> Cast Kerstradio</button> <br>
                     </center>
                 </div>
 
@@ -51,7 +50,22 @@
     </div>
 
     <script src="https://kit.fontawesome.com/1992647860.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/castjs/4.1.2/cast.min.js"></script>
 
+    <script>
+        // Create new Castjs instance
+      const cjs = new Castjs();
+      
+      // Wait for user interaction
+      $('#cast').on('click', function() {
+          // Check if casting is available
+          if (cjs.available) {
+              // Initiate new cast session
+              cjs.cast('"https://ruby.torontocast.com:1150/stream');
+          }
+      });
+      </script>  
 </body>
 
 </html>
