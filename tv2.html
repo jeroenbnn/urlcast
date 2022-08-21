@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerstradio - www.kerst.radio</title>
+    <link rel="shortcut icon" href="images/pocket watch.ico" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery.youtube-background.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/stijlcast.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCGC3LL3H0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CCGC3LL3H0');
+
+    </script>
+</head>
+
+<body onload="start()">
+    <audio src="https://ruby.torontocast.com:1150/stream" id="audio"></audio>
+    <div class="everything">
+
+        <div class="overlay">
+            <div class="container">
+                <div class="content">
+
+                    <span class="logo">
+                    </span>
+                    <div class="now-playing-1">
+                        <div class="sc-status-widget">
+                            <div is="stream-status-widget" lang="en" api-base="https://ruby.torontocast.com:2760/api/v2" server-id="1" bgcolor="#ffffff" bgopacity="0" bgimage="" meta_font_size="30" meta_font_style="normal" meta_font_color="#ededed" meta_opacity="0.7" progress_bar_color="#486bcd" progress_bar_bg_color="#e1e1e1" progress_bar_height="0" progress_opacity="1" progress_font_color="#000000" progress_font_opacity="0" track_image_default="https://ruby.torontocast.com:2260/media/tracks/default_track_img.png" track_image_size="0" vote_show="false" vote_buttons_color="#000000" vote_results_font_color_neg="#ff0000" vote_results_font_color_pos="#00ff00" vote_results_font_size="14">
+                            </div>
+                        </div>
+                    </div>
+                    <link rel="stylesheet" type="text/css" href="https://ruby.torontocast.com:2760/media/static/css/current_track_widget/status_widget.css" />
+                    <script type="text/javascript" src="https://ruby.torontocast.com:2760/media/static/js/current_track_widget/status_widget.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <!--YOUTUBE URL-->
+        <div id="ytbg" data-ytbg-fade-in="true" data-youtube="https://www.youtube.com/watch?v=ynwWl6-8daM"></div>
+
+    </div>
+
+    <script>
+        /* JAVASCRIPT BIJ HET LADEN VAN DE PAGINA */
+        /* ICONEN TONEN OF VERBERGEN BIJ LADEN PAGINA */
+        function start() {
+            /* VUL DE AUDIO TAG IN. INDIEN NIET GEPLAATST KAN ER GEEN AUDIO AFGESPEELD WORDEN. DE SRC BIJ LADEN VAN PAGINA WERKT NIET IN COMBINATIE MET HET LEGEN VAN SRC BIJ DE STOP FUNCTIE. VARIABELE MOET GEZET WORDEN VOOR HET STARTEN VAN DE PLAYER*/
+            audio.src = "https://ruby.torontocast.com:1150/stream";
+
+            /* START PLAYER */
+            audio.play();
+        }
+
+        /* YT ACHTERGROND LADEN */
+        jQuery(document).ready(function() {
+            jQuery('[data-youtube]').youtube_background();
+        });
+
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous" defer></script>
+    <script src="js/yt-fireplace.js"></script>
+</body>
+
+</html>
+a
