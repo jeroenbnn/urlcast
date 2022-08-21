@@ -1,39 +1,51 @@
-html, body {
-  background-color: #1ABC9C;
-  height:100%; 
+html,
+body {
+    background-color: #1ABC9C;
+    height: 100%;
 }
 
 body {
-  display:flex;
-  align-items:center;
+    display: flex;
+    align-items: center;
 }
 
 .header {
-  color: #ECF0F1;
+    color: #ECF0F1;
+}
+
+a {
+    color: #243050;
+}
+
+a:hover {
+    color: #fff;
 }
 
 .header .television {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+}
+
+.btn-kerst {
+    color: #243050;
+    background-color: #edeff1;
+}
+
+.btn-kerst:hover {
+    color: #ffffff;
+    background-color: #243050;
 }
 
 .form {
-  background-color: #edeff1;
-  padding: 40px 30px;
-  border-radius: 6px;
+    background-color: #edeff1;
+    padding: 40px 30px;
+    border-radius: 6px;
 }
 
-.enterprise  {
-  margin: 20px;
-  font-size: 14px;
-  text-align: center;
-  color: #16A085;
-}
 
 .footer {
-  color: #16A085;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 80px;
-  font-size: 10px;
+    color: #243050;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 10px;
 }
